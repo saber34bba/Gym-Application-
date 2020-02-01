@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapp="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#3F3F3F"
+            android:elevation="5dp"
+            android:id="@+id/card1"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@drawable/circle_buy"
+                    aapp:srcCompat="@drawable/ic_arrow"
+                    android:layout_gravity="end"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold|italic"
+                    android:textSize="18sp"
+                    android:lineHeight="25dp"
+                    android:id="@+id/titleofExercice"
+                    android:text="Poque Sur Genoux\nPrise Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <LinearLayout
+                     android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:background="@drawable/recchrono"
+                        android:textColor="#000"
+                        android:id="@+id/nbExercice"
+                        android:text=" \t 15  \t  "
+                        android:textSize="18sp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center|top"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:text="x"
+                        android:textSize="18dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center|top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/rep"
+                        android:background="@drawable/recchrono"
+                        android:textColor="#000"
+                        android:text=" \t 5 rep\t  "
+                        android:textSize="18sp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center|top"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    </LinearLayout>
+                    <TextView
+                        android:textStyle="italic"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="#fff"
+                        android:text="Expected Time : 20 min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/sss"
+            android:background="#f1f"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

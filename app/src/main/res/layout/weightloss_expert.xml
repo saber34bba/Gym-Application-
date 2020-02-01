@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#48D8D4D4"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:id="@+id/scroll"
+        android:fillViewport="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:id="@+id/ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:fontFamily="casual"
+                android:textStyle="bold|italic"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:text="Objective"
+                android:id="@+id/text"
+                android:layout_alignParentTop="true"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp" />
+            <TextView
+                android:id="@+id/objective"
+                android:layout_weight="2"
+                android:textSize="25sp"
+                android:fontFamily="casual"
+                android:textStyle="bold|italic"
+                android:textColor="#013692"
+                android:text="Chest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_below="@+id/ll"
+            android:id="@+id/frame"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/progressBarweight"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/draw_circleblack"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="40"
+                    android:progressDrawable="@drawable/draw_circle"
+                    android:rotation="-90" />
+
+                <TextView
+                    android:id="@+id/percent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:textColor="#0C0C0C"
+                    android:textSize="28sp"
+                    android:text="0%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/frame"
+            android:id="@+id/recyclerexercice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <!--include layout="@layout/dialoglayout"/-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

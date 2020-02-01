@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/wall"
+    tools:context=".FirstActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:src="@mipmap/manwoman"
+            android:layout_width="wrap_content"
+            android:id="@+id/l"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="bold|italic"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:id="@+id/im"
+            android:textSize="22sp"
+            android:text="Let's do Some Sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+<RelativeLayout
+    android:layout_margin="25dp"
+    android:id="@+id/rl"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <Button
+        android:id="@+id/signinbtn"
+        android:textSize="22sp"
+        android:fontFamily="casual"
+        android:textStyle="bold|italic"
+        android:text="Sign in"
+        android:background="@drawable/touch_buy"
+        android:layout_centerInParent="true"
+        android:layout_width="180dp"
+        android:layout_height="60dp" />
+
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:textSize="22sp"
+        android:fontFamily="casual"
+        android:textStyle="bold|italic"
+        android:text="Sign Up"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/signinbtn"
+        android:background="@drawable/touch_buy"
+        android:layout_centerInParent="true"
+        android:layout_width="220dp"
+        android:layout_height="60dp" />
+
+</RelativeLayout>
+
+</LinearLayout>

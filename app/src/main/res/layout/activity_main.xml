@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/xviewpager">
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabGravity="fill"
+        android:id="@+id/tabl"
+        android:layout_width="match_parent"
+        app:tabMode="fixed"
+         android:layout_alignParentBottom="true"
+        app:tabTextColor="#131212"
+        app:tabIconTint="@drawable/touch3"
+        app:tabBackground="@drawable/touch2"
+        app:tabIndicatorColor="#FFFFFF"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/graphxml"
+        android:layout_marginBottom="35dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/tabl"
+        android:src="@mipmap/graphicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="@drawable/gradientclr"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold|italic"
+                android:fontFamily="casual"
+                android:textColor="#fff"
+                android:text="Total Time "
+                android:textSize="18sp"
+                android:id="@+id/ttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold|italic"
+                android:textColor="#FF9800"
+                android:layout_below="@+id/ttime"
+                android:text="01 H : 02 m "
+                android:layout_width="match_parent"
+                android:id="@+id/t"
+                android:layout_height="wrap_content" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_below="@+id/t"
+            android:layout_marginTop="5dp"
+            android:layout_width="50dp"
+            android:layout_centerInParent="true"
+            android:layout_height="50dp"
+            android:id="@+id/lottie"
+            android:layout_gravity="start"
+            app:lottie_autoPlay="false"/>
+
+            <TextView
+                android:textStyle="bold|italic"
+                android:fontFamily="casual"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/lottie"
+                android:text="Distance : 2,1 Km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:id="@+id/runimg"
+        android:background="@mipmap/running" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="Go"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ll"
+        android:id="@+id/gobtn"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:background="@drawable/touch"
+        android:layout_width="120dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/graph"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/graphicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

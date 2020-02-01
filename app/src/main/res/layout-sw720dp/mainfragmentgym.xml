@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="false"
+    android:scrollbars="vertical"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:background="@drawable/gradientcolor"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+      <TextView
+          android:layout_margin="5dp"
+          android:layout_gravity="center"
+          android:textColor="#fff"
+          android:textSize="22sp"
+          android:background="@drawable/rectangle"
+          android:text=" Loss your weight \n\n\twith this Exercices"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+        <ImageView
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/fat"
+            android:layout_marginEnd="10dp"
+            android:layout_margin="15dp"
+
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#ff2"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:background="@drawable/rectangle"
+            android:text=" Loss your weight \n\n\twith this Exercices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/fat"
+            android:layout_marginEnd="10dp"
+            android:layout_margin="15dp"
+
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:fontFamily="casual"
+        android:layout_marginStart="2dp"
+        android:textColor="#050505"
+        android:layout_gravity="center"
+        android:text="Body Building Exercices"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <FrameLayout
+            android:layout_marginBottom="10dp"
+            android:id="@+id/frame"
+            android:background="@mipmap/nature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:scaleType="centerInside"
+                 android:layout_margin="30dp"
+                app:srcCompat="@drawable/manlift"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <Button
+            android:background="@drawable/touchcircle"
+            android:text="GO"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+
+
+
+    <declare-styleable name="muscle">
+        <attr name="chest" format="color" />
+        <attr name="upperlegs" format="color"/>
+        <attr name="forearms" format="color"/>
+        <attr name="biceps" format="color"/>
+        <attr name="abs" format="color"/>
+        <attr name="shoulders" format="color"/>
+        <attr name="lowerlegs" format="color"/>
+    </declare-styleable>
+
+    <!--style name="UpdatedScene" parent="DefaultScene">
+        <item name="chest">#4906E4</item>
+        <item name="upperlegs">#1160FF</item>
+        <item name="abs">#1160FF</item>
+        <item name="biceps">#1160FF</item>
+        <item name="shoulders">#1160FF</item>
+        <item name="forearms">#1160FF</item>
+        <item name="lowerlegs">#1160FF</item>
+    </style>
+
+    <style name="DefaultScene">
+        <item name="chest">#FFFFFF</item>
+        <item name="upperlegs">#FFFFFF</item>
+        <item name="abs">#FFFFFF</item>
+        <item name="biceps">#FFFFFF</item>
+        <item name="shoulders">#FFFFFF</item>
+        <item name="forearms">#FFFFFF</item>
+    </style-->
+
+
+
+
+
+
+
+    <style name="UpdatedChest" parent="DefaultChest">
+        <item name="chest">#2361FD</item>
+    </style>
+
+    <style name="DefaultChest">
+        <item name="chest">#FFFFFF</item>
+    </style>
+
+
+
+
+    <style name="UpdatedUpperLegs" parent="DefaultUpperLegs">
+        <item name="upperlegs">#A50C4C</item>
+    </style>
+
+    <style name="DefaultUpperLegs">
+        <item name="upperlegs">#FFFFFF</item>
+    </style>
+
+
+
+    <style name="UpdatedForearms" parent="DefaultForearms">
+        <item name="forearms">#2361FD</item>
+    </style>
+
+    <style name="DefaultForearms">
+        <item name="forearms">#FFFFFF</item>
+    </style>
+
+
+
+    <style name="UpdatedBiceps" parent="DefaultBiceps">
+        <item name="biceps">#A50C4C</item>
+    </style>
+
+    <style name="DefaultBiceps">
+        <item name="biceps">#FFFFFF</item>
+    </style>
+
+
+
+    <style name="Updatedabs" parent="Defaultabs">
+        <item name="abs">#F8A10A</item>
+    </style>
+
+    <style name="Defaultabs">
+        <item name="abs">#FFFFFF</item>
+    </style>
+
+
+
+    <style name="Updateshoulders" parent="Defaultshoulders">
+        <item name="shoulders">#078A1E</item>
+    </style>
+
+    <style name="Defaultshoulders">
+        <item name="shoulders">#FFFFFF</item>
+    </style>
+
+
+
+
+    <style name="Updatelowerlegs" parent="Defaultlowerlegs">
+        <item name="lowerlegs">#4906E4</item>
+    </style>
+
+    <style name="Defaultlowerlegs">
+        <item name="lowerlegs">#FFFFFF</item>
+    </style>
+</resources>
+

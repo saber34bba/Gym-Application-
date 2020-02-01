@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="false"
+    android:layout_height="match_parent"
+    tools:context=".WeightLossActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/xviewpager">
+        </androidx.viewpager.widget.ViewPager>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:id="@+id/cord"
+            android:background="@color/transparent"
+            android:layout_gravity="bottom"
+            android:layout_height="95dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:fabSize="mini"
+                app:layout_anchor="@id/bar" />
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bar"
+                app:fabCradleRoundedCornerRadius="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+                app:fabAlignmentMode="end"
+                android:layout_gravity="bottom"
+                app:hideOnScroll="true"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:background="@color/colorbleu"
+                android:backgroundTint="#2C79C5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--TextView
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:text="Personal"
+                        android:textColor="#FFFFFF">
+
+                    </TextView>
+
+                    <TextView
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:text="Personal"
+                        android:textColor="#FFFFFF">
+
+                    </TextView>
+
+
+
+
+
+                    <TextView
+                        android:layout_marginEnd="70dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:text="Personal"
+                        android:textColor="#FFFFFF">
+
+                    </TextView-->
+
+                </LinearLayout>
+
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.tabs.TabLayout
+                app:tabGravity="fill"
+                app:layout_anchor="@id/bar"
+                android:id="@+id/tabl"
+                android:layout_width="match_parent"
+                app:tabMode="fixed"
+                app:layout_anchorGravity="bottom"
+                app:tabTextColor="#131212"
+                app:tabIconTint="@drawable/touch3"
+                app:tabBackground="@color/transparent"
+                app:tabIndicatorColor="#FFFFFF"
+                android:layout_height="wrap_content"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </FrameLayout>
+
+<!--include layout="exerciceimglay">
+
+</include-->
+</RelativeLayout>

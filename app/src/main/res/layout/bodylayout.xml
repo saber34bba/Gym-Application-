@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+       android:elevation="3dp"
+    app:cardCornerRadius="5dp"
+    android:layout_gravity="center|top"
+    app:cardBackgroundColor="#3C3A3A"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardrecycler"
+    android:layout_height="70dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutbodypart"
+        android:gravity="center"
+       android:layout_margin="2dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold|italic"
+            android:id="@+id/partname"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:layout_marginStart="2dp"
+            android:text="Chest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold|italic"
+            android:layout_marginStart="2dp"
+            android:textSize="18sp"
+            android:id="@+id/totalexercicenumber"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:text="116 Exercices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

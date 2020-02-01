@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:id="@+id/fragmentgym"
+    android:gravity="center"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    android:background="@drawable/gradientclr"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/bodyrecyclerview"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/bodyrecyclerview"
+        android:fontFamily="casual"
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:text="Choose a body part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/mus"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/muscle_part" />
+
+    <ImageView
+        android:id="@+id/t"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/small"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+
+
+    <Button
+        android:id="@+id/exercicebtn"
+        android:layout_toStartOf="@+id/mus"
+        android:fontFamily="casual"
+        android:textStyle="bold|italic"
+        android:textColor="#fff"
+       android:layout_above="@+id/t"
+        android:text="Let's \nExercice"
+        android:background="@drawable/touchcircle"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+</RelativeLayout>
