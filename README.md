@@ -11,6 +11,9 @@ this is Some ScreenShot
 ![Screenshot_2019-12-18-18-27-42](https://user-images.githubusercontent.com/34833208/73600755-18460480-4555-11ea-8316-5fa6ff0127c1.png)
 
 
+![Screenshot_2019-12-18-18-29-01](https://user-images.githubusercontent.com/34833208/73976156-ff0fd000-4927-11ea-9eb8-080518e90be2.png)
+
+
 ![Screenshot_2019-12-18-18-29-23](https://user-images.githubusercontent.com/34833208/73600767-4f1c1a80-4555-11ea-8eec-08060d09c0bb.png)
 
 
